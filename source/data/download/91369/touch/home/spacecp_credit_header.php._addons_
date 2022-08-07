@@ -1,0 +1,10 @@
+<?php echo 'QQ:2039074300';exit;?>
+<div class="zaocreditop mtm mbm">
+	<a href="home.php?mod=spacecp&ac=credit&op=base" $opactives[base]>{lang my_credits}</a>
+	<a href="home.php?mod=spacecp&ac=credit&op=log" $opactives[log]>{lang memcp_credits_log}</a>
+	<a href="home.php?mod=spacecp&ac=credit&op=rule" $opactives[rule]>{lang credit_rule}</a>
+	<!--{if $_G[setting][ec_ratio] && ($_G[setting][ec_account] || $_G[setting][ec_tenpay_opentrans_chnid] || $_G[setting][ec_tenpay_bargainor]) || $_G['setting']['card']['open']}-->
+	<a href="home.php?mod=spacecp&ac=credit&op=buy" $opactives[buy]>{lang buy_credits}</a>
+	<!--{/if}-->
+</div>
+

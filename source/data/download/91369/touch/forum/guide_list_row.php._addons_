@@ -1,0 +1,99 @@
+<?php echo 'QQ:2039074300';exit;?>
+<!--{if $list['threadcount']}-->
+	<ul class="hotlist">
+	<!--{eval require_once(DISCUZ_ROOT.'./template/zaoer_twap/touch/php/datalist.php');}-->
+	<!--{loop $list['threadlist'] $key $thread}-->
+	<!--{eval $threadtable = substr($thread[tid], -1);}-->
+	<!--{eval $img_number = datalist_img_num($thread[tid], $thread[authorid], $threadtable);}-->
+	<li>
+        <div class="cardze">
+			<div class="cardze-avatar">
+				<div class="avatar cl">
+					<!--{if !$thread[author]}-->
+					<a>{avatar($thread[0],middle)}</a>
+					<!--{else}-->
+					<a href="home.php?mod=space&uid=$thread[authorid]&do=profile">{avatar($thread[authorid],middle)}</a>
+					<!--{/if}-->
+				</div>
+			</div>
+			<div class="cardze-box">
+				<header class="fdtlhze">
+					<div class="fdtlhzem">
+						<div class="name">
+							<!--{if !$thread[author]}-->
+							<a class="grey">{lang anonymous}</a>
+							<!--{else}-->
+							<a href="home.php?mod=space&uid=$thread[authorid]&do=profile" class="blue">$thread[author]</a>
+							<!--{/if}-->
+						</div>
+						<div class="data">
+							<!--{if $view == 'new'}-->
+							<span class="grey fszet">{lang guide_new} $thread[lastpost]&nbsp;&nbsp;</span>
+							<!--{else}-->
+							<span class="grey fszet">$thread[dateline]</span>
+							<!--{/if}-->
+							<!--{if {$thread[recommend_add]} > 0}--><span class="zecre grey y"><i class="zaofont iconpraise fszet"></i><em>$thread[recommend_add]</em></span><!--{/if}-->
+							<!--{if $thread['isgroup'] != 1}--><!--{if $thread[replies] > 0}--><span class="zecre grey y"><i class="zaofont iconcomment fszet"></i><em>$thread[replies]</em></span><!--{/if}--><!--{else}--><!--{if {$groupnames[$thread[tid]][replies]} > 0}--><span class="zecre grey y"><i class="zaofont iconcomment fszet"></i><em>{$groupnames[$thread[tid]][replies]}</em></span><!--{/if}--><!--{/if}-->
+							<!--{if $thread['price'] > 0}-->
+								<!--{if $thread['special'] == '3'}-->
+								<span class="zecrq fszet y">$thread[price] {$_G[setting][extcredits][$_G['setting']['creditstransextra'][2]][unit]}{$_G[setting][extcredits][$_G['setting']['creditstransextra'][2]][title]}</span>
+								<!--{else}-->
+								<span class="zecrq fszet y">{lang price} $thread[price] {$_G[setting][extcredits][$_G['setting']['creditstransextra'][1]][unit]}{$_G[setting][extcredits][$_G['setting']['creditstransextra'][1]][title]}</span>
+								<!--{/if}-->
+							<!--{elseif $thread['special'] == '3' && $thread['price'] < 0}-->
+								<span class="grey zecre fszet y">{lang resolved}</span>
+							<!--{/if}-->
+							<!--{if $thread['special'] == 1}-->
+							<span class="zecsp fszet y">{lang thread_poll}</span>
+							<!--{elseif $thread['special'] == 2}-->
+							<span class="zecsp fszet y">{lang thread_trade}</span>
+							<!--{elseif $thread['special'] == 3}-->
+							<span class="zecsp fszet y">{lang thread_reward}</span>
+							<!--{elseif $thread['special'] == 4}-->
+							<span class="zecsp fszet y">{lang thread_activity}</span>
+							<!--{elseif $thread['special'] == 5}-->
+							<span class="zecsp fszet y">{lang thread_debate}</span>
+							<!--{/if}-->
+							<!--{if $thread['digest'] > 0 }-->
+							<span class="zecdig fszet y">{lang thread_digest}</span>
+							<!--{/if}-->
+							<!--{if in_array($thread['displayorder'], array(1, 2, 3, 4))}-->
+							<span class="zecdis fszet y">{lang thread_sticky}</span>
+							<!--{/if}-->
+							<!--{if $thread['readperm']}--><span class="zecrq fszet y">{lang readperm}$thread[readperm]</span><!--{/if}-->
+						</div>
+					</div>
+				</header>
+				<section class="fdtlbze cl">
+					<a href="forum.php?mod=viewthread&tid=$thread[tid]&fromguid=<!--{if $_GET['view'] == 'newthread'}-->newthread<!--{elseif $_GET['view'] == 'hot'}-->hot<!--{elseif $_GET['view'] == 'digest'}-->digest<!--{elseif $_GET['view'] == 'new'}-->new<!--{elseif $_GET['view'] == 'my'}-->my<!--{/if}-->&{if $_GET['archiveid']}archiveid={$_GET['archiveid']}&{/if}extra=$extra">
+					<!--{if !$thread['forumstick'] && $thread['closed'] > 1 && ($thread['isgroup'] == 1 || $thread['fid'] != $_G['fid'])}-->
+						<!--{eval $thread[tid]=$thread[closed];}-->
+					<!--{/if}-->
+					<h2><span $thread[highlight]>$thread[subject]</span></h2>
+					<!--{if $img_number == 1 }-->
+						<!--{eval $list_img1 = datalist_img($thread[tid], $thread[authorid], 1, $threadtable);}-->
+						<div class="img_one">
+						<!--{loop $list_img1 $list_img1_1}-->
+						<em style="background-image:url({eval echo(getforumimg($list_img1_1[aid],0,500,400))});"></em>
+						<!--{/loop}-->
+						</div>
+						<div class="clearze"></div>
+					<!--{elseif $img_number > 1}-->
+						<div class="img_three">
+						<!--{eval $list_img3 = datalist_img($thread[tid], $thread[authorid], 6, $threadtable);}-->
+						<!--{loop $list_img3 $list_img3_1}-->
+						<em style="background-image:url({eval echo(getforumimg($list_img3_1[aid],0,150,150))});"></em>
+						<!--{/loop}-->
+						</div>
+						<div class="clearze"></div>
+					<!--{/if}-->
+				   </a>
+				</section>
+			</div>
+         </div>
+    </li>
+	<!--{/loop}-->
+	</ul>
+<!--{else}-->
+	<p class="b_p b_m hm grey">{lang guide_nothreads}</p>
+<!--{/if}-->

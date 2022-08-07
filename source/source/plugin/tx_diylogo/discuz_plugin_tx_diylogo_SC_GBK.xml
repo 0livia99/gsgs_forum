@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5]]></item>
+	<item id="Time"><![CDATA[2012-11-20 18:55]]></item>
+	<item id="From"><![CDATA[ÌìÏÂÍøÂç (http://www.tnxia.com)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[0]]></item>
+			<item id="name"><![CDATA[×Ô¶¨ÒåLOGO]]></item>
+			<item id="identifier"><![CDATA[tx_diylogo]]></item>
+			<item id="description"><![CDATA[ËæÊ±ËæµØ¸ü»»ÍøÕ¾LOGO£¬²»ÓÃµÇÂ½FTP¿Í»§¶Ë¡¢²»ÓÃ¸Ä·ç¸ñ¡¢²»ÓÃ¸üÐÂ»º´æ£¬²Ù×÷·½±ã¡£]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[tx_diylogo/]]></item>
+			<item id="copyright"><![CDATA[ÌìÏÂÍøÂç]]></item>
+			<item id="version"><![CDATA[1.0.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[admin]]></item>
+					<item id="menu"><![CDATA[LOGOÉèÖÃ]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[diylogo]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3]]></item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="language">
+			<item id="templatelang">
+				<item id="tips"><![CDATA[¼¼ÇÉÌáÊ¾]]></item>
+				<item id="tips_msg1"><![CDATA[LOGO³ß´ç²»ÒË¹ý´ó£¬²»È»»á°ÑÒ³Ãæ³Å¿ª£¬¾ßÌåÒò·ç¸ñ¶øÒì¡£½¨Òé³ß´ç£º¿í<=70¡£]]></item>
+				<item id="p_logo_title"><![CDATA[LOGOÉÏ´«]]></item>
+				<item id="p_logo_msg"><![CDATA[ÇëÊäÈëLOGOµÄÍ¼Æ¬µØÖ·£¨Ö»Ö§³Ö.png|.gif|.jpg£©]]></item>
+				<item id="p_nlogo_title"><![CDATA[LOGOµØÖ·]]></item>
+				<item id="p_nlogo_msg"><![CDATA[ÏÖÔÚÏÔÊ¾µÄLOGOµØÖ·]]></item>
+				<item id="submit"><![CDATA[Ìá½»]]></item>
+			</item>
+		</item>
+	</item>
+</root>

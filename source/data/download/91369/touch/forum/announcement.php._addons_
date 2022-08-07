@@ -1,0 +1,36 @@
+<?php echo 'QQ:2039074300';exit;?>
+<!--{template common/header}-->
+<!-- header start -->
+<header class="header">
+<div class="navzao">
+	<a href="javascript:history.back();" class="z zaofont iconleft"></a>
+	<span class="name">{lang announcement}</span>
+	<a href="forum.php" class="y zaofont iconshouye fszett"></a>
+</div>
+</header>
+<!-- header end -->
+
+<div class="cl">
+	<div class="zao-anno-nav b_p zebb1">
+		<a href="forum.php?mod=announcement" class="fszef blue{if empty($_GET[m])} a{/if}">{lang all}</a>
+		<!--{loop $months $month}-->
+		<a href="forum.php?mod=announcement&m=$month[0].$month[1]" class="fszef blue{if $_GET[m] == $month[0].$month[1]} a{/if}">$month[0]/$month[1]</a>
+	    <!--{/loop}-->
+	</div>
+	<div class="clearze"></div>
+	<div id="annofilter"></div>
+	<ul class="zao-anno-ul">
+		<!--{loop $announcelist $ann}-->
+		<li class="zao-anno-li b_p">
+			<h1 id="announce$ann[id]_c" class="anno-title">$ann[subject]</h1>
+			<p class="pbm cl"><em class="z grey anno-name fszet">{lang author} : $ann[author]</em><em class="y grey fszet">$ann[starttime]</em></p>
+			<div id="announce$ann[id]" class="anno-detail">
+				$ann[message]
+			</div>
+		</li>
+		<!--{/loop}-->
+	</ul>
+</div>
+
+<!--{template common/footer}-->
+

@@ -1,0 +1,27 @@
+<?php
+if (!defined('IN_DISCUZ')) {
+    exit('Access Denied');
+}
+
+function zaoer($language)
+{
+    $lang = array(
+
+		'follow_add' => '关注',
+		'follow_del' => '已关注',
+		'follow_er' => '粉丝',
+		'huxiang' => '互相',
+		'none' => '暂无',
+		'comment' => '评论',
+		'pm' => '私信',
+		'kongjian' => '空间',
+		'nofaq' => '无对应帮助内容',
+		'announcement' => '公告',
+
+	);
+    $language = $lang[$language];
+    if (CHARSET == 'gbk') {
+        return $language;
+    }
+    return diconv($language, 'GBK', CHARSET);
+}

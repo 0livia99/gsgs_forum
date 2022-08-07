@@ -1,0 +1,54 @@
+/*
+[name]¿É°®»Æ[/name]
+[iconbgcolor]#ffca4e[/iconbgcolor]
+Powered by Discuz! X
+*/
+
+/* µ¼º½ */
+#hd .ggq-nvon,#hd .ggq-nvon li,.ggq-bbsg .bbsg-onyl .onyl-qhon li.on,.ggq-bbsc h2,.ggq-bktw .bktw-h2,.ggq-nfan .nfan-fbzt, .ggq-nfan .nfan-cyhf,.ggq-cwqz a {background: #ffca4e;}
+#hd .ggq-nvon li.a a, #hd .ggq-nvon li a:hover, #hd .ggq-nvon li.hover a {color: #282828;background: #e4b74c;}
+#hd .ggq-nvon li a,.ggq-bbsg .bbsg-onyl .onyl-qhon li.on a,.ggq-bbsc h2,.ggq-bkft .ptm .pnc,.ggq-bktw .bktw-h2,.ggq-bkft .ptm .pnc,.ggq-nfan .nfan-fbzt, .ggq-nfan .nfan-cyhf,.ggq-nrkh .pnpost .pnc,.ggq-cwqz a {color: #282828 !important;}
+
+#hd .ggq-nvon li[onmouseover] a:before,#hd .ggq-nvon li[onmouseover].a a:before {background: url(guiigo-xxjt.png) no-repeat;background-position: 0 -5px;}
+.ggq-bbsg .bbsg-onzl .onzl-ksft:before {background: url(guiigo-fico.png) no-repeat 0;}
+.ggq-cwqz .z:before {background: url(guiigo-cqtb.png) no-repeat 0;}
+.ggq-cwqz .y:before {background: url(guiigo-wqtb.png) no-repeat 0;}
+
+
+.ggq-nvbl .h_pop {background: #e4b74c;}
+.ggq-nvbl .h_pop li a {color: #282828;border-bottom: 1px solid #f7c857;}
+.ggq-nvbl .h_pop li a:hover {color: #000000;}
+.ggq-ztfl .ttp a:hover,.ggq-ztfl .ttp .a a,.ttp .a a,.ttp a:hover {color: #ffca4e;}
+.ggq-nfan .nfan-cyhf,.ggq-cwqz .y,.ggq-bbsg .bbsg-onzl .onzl-rbnr a:hover,.ggq-bbsg .bbsg-onyl .onyl-qhon li.on {background: #3f4954 !important;color: #ffca4e !important;}
+.ggq-bbsg .bbsg-onyl .onyl-qhon li.on a {color: #ffca4e !important;}
+
+/* °´Å¥ */
+.ggq-bbsg .bbsg-onzl .onzl-ksft,.ggq-bbsg .bbsg-hdim .hdim-imon li a span,.ggq-zfan a,.ggq-bkon .bkon-czan .czan-sc,.ggq-bkft .ptm .pnc,.ggq-nrkh .pnpost .pnc,.ggq-fbzt a,.ggq-zfan .ggq-qzfa {background: #ffca4e;color: #282828;}
+
+.pn { vertical-align: middle; overflow: hidden; margin-right: 3px; padding: 0; height: 25px; border: 0; background: #ffca4e; cursor: pointer; -moz-box-shadow: 0 1px 0 #E5E5E5; -webkit-box-shadow: 0 1px 0 #E5E5E5; box-shadow: 0 1px 0 #E5E5E5; }
+.pn em, .pn span, .pn strong {padding: 0 20px;}
+.pnc, a.pnc {border-color: #c78e51;background-color: #ffca4e;background-position: 0 -48px;color: #282828 !important;}
+.pn em, .pn strong {font-weight: 400;font-size:14px;}
+.filebtn { position: relative; margin: 0 auto; width: 80px; overflow: hidden; }
+.tb .o { margin: 1px 4px 0 2px; border: 1px solid #c78e51; }
+.tb .o, .tb .o a { height: 25px; background: #ffca4e; color: #282828;}
+
+/* ·­Ò³ */
+.pgs {}.pgs #newspecial, .pgs #newspecialtmp, .pgs #post_reply, .pgs #post_replytmp { float: left; margin-right: 5px; }
+.pg { float: right; }
+.pg, .pgb { line-height: 30px; }
+.pg a, .pg strong, .pgb a, .pg label { float: left; display: inline; margin-left: 4px; padding: 0 12px; height: 30px; border: 0; border-color: #e0e0e0; background-color: #fff; background-repeat: no-repeat; color: #333; overflow: hidden; text-decoration: none;border-radius: 3px;}
+.pg a.nxt, .pgb a { padding: 0 10px; }
+.pg a:hover, .pgb a:hover { border-color:#3f4954; color:#FFF; background:#3f4954;}
+.pg a.nxt { padding-right: 25px; background-image: url(arw_r.gif); background-position: 90% 50%;}
+.pg a.prev { background-image: url(arw_l.gif); background-position: 50% 50%; }
+.pg a.prev:hover{ background:#3f4954 url(arw_l1.png) no-repeat; background-position: 50% 50%; }
+.pg a.nxt:hover { padding-right: 25px; background:#3f4954 url(arw_r1.png) no-repeat; background-position: 90% 50%; }
+.pg strong { background:#3f4954; border-color:#3f4954; font-weight:normal; color:#FFF;}
+.pgb a { padding-left: 25px; background-image: url(arw_l.gif); background-position: 10px 50%; }
+.pgb a:hover { padding-left: 25px; background:#3f4954 url(arw_l1.png) no-repeat; background-position: 10px 50%; }
+.pg label { cursor: text;}
+.ie6 .pg label { padding-top: 3px; height: 23px; }
+.pg label .px { padding: 0; width: 25px; height: 16px; line-height: 16px; }
+#pgt .pg, #pgt .pgb { margin-top: 5px; }
+

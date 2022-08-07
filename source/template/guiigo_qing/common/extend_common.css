@@ -1,0 +1,134 @@
+/* Author:GUIIGO QQ:99972466 */
+
+body{background: #f4f5f8;}
+a:hover {color: #ff8800;text-decoration: none;}
+.wp {width: 1200px;}
+.nwp {margin: 0 auto;width: 1200px;}
+.ct2 .mn {width: 890px;}
+.ct2 .sd {width: 300px;}
+.ct3_a .mn {width: 820px;}
+.sslct_btn i {background: #3f4954;}
+
+/* 全局下拉菜单 */
+.p_pop, .p_pof, .sllt {padding: 0;border-color: #e4e4e4;box-shadow: none;}
+.p_pop a {height: 28px;line-height: 28px;padding: 0 5px; border-bottom: 1px solid #e4e4e4;color: #666;}
+.p_pop li:last-child a {border-bottom: none;}
+.p_pop a:hover, .p_pop a.a, #sctype_menu .sca {background: #f3f3f3;color: #ff8800;}
+.prompt_news, .prompt_follower, .prompt_news_0, .prompt_follower_0, .ignore_notice, .prompt_concern {margin: 7px 5px 0 0;}
+.card .o a {height: auto;}
+
+/* 面包屑导航 */
+#pt {margin: 5px 0;padding: 0;}
+#pt .z, #pt .z a, #pt .z em, #pt .z span {color: #999;}
+#pt .z a:hover {color: #ffc201;}
+.nvhm {width: 13px;background: url({IMGDIR}/guiigo-sico.png) no-repeat 0;}
+#pt .z em {background: url({IMGDIR}/guiigo-mxic.png) no-repeat 6px 10px;}
+
+/* 顶部菜单 */
+#toptb {height: 35px;line-height: 35px;background: #e6e9ee;border: none;}
+#toptb a {height: 35px;padding: 0;padding-right: 15px;color: #7d7e86;}
+#toptb a:hover {color: #ff8800;}
+#toptb a#sslct, .switchwidth, #toptb a.switchblind {margin-top: 9px;}
+#diy-tg {background: url({IMGDIR}/panel-toggle.png) no-repeat 100% 7px;}
+#toptb #diy-tg_menu {margin: -11px 0 0 -17px;}
+#toptb #diy-tg_menu a {padding: 0;}
+
+/* logo登录用户信息 */
+#hd .ggq-nvbl {padding-top: 0;}
+#hd h2 {padding-bottom: 0;}
+.ggq-lgdl {min-height: auto;padding: 15px 0;}
+#hd .fastlg,#um {padding-top: 7px;}
+.vwmy {padding-left: 18px;background: url({IMGDIR}/guiigo-tbyh.png) no-repeat 0 2px;}
+.ggq-yd .ggq-px {background: #fff;border-color: #eaeaea;border-radius: 3px;}
+.ggq-yd .ggq-pn {width: 66px;height: 25px;line-height: 25px;margin-right: 7px;background: #3f4954;border: none;color: #fff;box-shadow: none;border-radius: 3px;}
+.ggq-yd .ggq-pn:hover {background: #2a3038;}
+.ggq-yd .ggq-zc {padding-left: 4px;color: #ff8800;}
+
+/* 全局导航 */
+#hd .ggq-nvon {height: 45px;background: #3f4954;border-radius: 5px;}
+#hd .ggq-nvon li {height: 45px;line-height: 45px;padding-right: 0;font-weight: 400;font-size: 15px;background: #3f4954;}
+#hd .ggq-nvon li a {position: relative;height: 45px;margin-right: 2px;padding: 0 20px;}
+#hd .ggq-nvon li.a {margin: 0;}
+#hd .ggq-nvon li.a a,#hd .ggq-nvon li a:hover,#hd .ggq-nvon li.hover a {color: #fff;background: #2a3038;}
+#hd .ggq-nvon li[onmouseover] a {padding-right:25px;}
+#hd .ggq-nvon li[onmouseover] a:before {content: "";position: absolute;top: 19px;right: 10px;width: 9px;height: 5px;-webkit-transition: .5s transform;-moz-transition: .5s transform;transition: .5s transform;background: url({IMGDIR}/guiigo-xxjt.png) no-repeat;background-position: 0 -5px;}
+#hd .ggq-nvon li[onmouseover].hover a:before {transform: rotate(180deg);-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);background-position: 0 -5px;}
+#hd .ggq-nvon li[onmouseover].a a:before {background: url({IMGDIR}/guiigo-xxjt.png) no-repeat;background-position: 0 -5px;}
+
+/* 下拉菜单 */
+.ggq-nvbl .h_pop {padding: 0;background: #2a3038;box-shadow: none;border: none;border-radius: 0 0 5px 5px;}
+.ggq-nvbl .h_pop li {}
+.ggq-nvbl .h_pop li a {height: 35px;line-height: 35px;padding: 0 15px;background: none;color: #b3b3b3;font-size: 12px;border-bottom: 1px solid #3e3e3e;}
+.ggq-nvbl .h_pop li:last-child a {border-bottom: none;}
+.ggq-nvbl .h_pop li a:hover {color: #ffffff;}
+
+/* 横排菜单 */
+#mu ul {margin-top: 10px;border-radius: 5px;background: #fff;}
+#mu ul li {height: 40px;}
+#mu ul li a {height: 20px;line-height: 20px;margin: 10px 0;padding: 0 20px;border-right: 1px solid #e6e6e6;}
+
+/* 快捷导航 */
+#qmenu {position: relative;width: 80px;height: 25px;line-height: 25px;margin: 10px 10px 0 0;padding-right: 12px;color: #3f4954;font-weight: 400;background: #fff;border-radius: 3px;}
+#qmenu:before {content: "";position: absolute;top: 11px;right: 10px;width: 9px;height: 5px;background: #fff url({IMGDIR}/guiigo-kjdh.png) no-repeat;-webkit-transition: .5s transform;-moz-transition: .5s transform;transition: .5s transform;}
+#qmenu.a:before {transform: rotate(180deg);-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);}
+
+/* 搜索栏 */
+#scbar {height: 50px;margin-top: 10px;padding: 0 10px;border: none;background: #fff;border-radius: 5px;}
+.scbar_type_td {background: none;}
+#scbar_type {height: 26px;line-height: 26px;margin-top: 11px;border: 1px solid #f3f3f3;background: url({IMGDIR}/guiigo-xxjt.png) no-repeat 41px 11px;border-radius: 5px 0 0 5px;}
+#scbar_type_menu {min-width: 59px;margin-top: -3px;padding: 0;box-shadow: none;border-color: #f3f3f3;border-top: 0;border-radius: 0 0 5px 5px;}
+#scbar_type_menu li a {height: 30px;line-height: 30px;padding: 0 10px;border-bottom: 1px solid #f3f3f3;color: #999;}
+#scbar_type_menu li:last-child a {border-bottom: none;}
+#scbar_type_menu li a:hover {background: #f3f3f3;color: #666;}
+.scbar_txt_td {background: none;}
+#scbar_txt {width: 300px;height: 26px;line-height: 26px;margin-top: 11px;padding: 0;padding-left: 10px;border: 1px solid #f3f3f3;border-left: 0;border-radius: 0 5px 5px 0;}
+.scbar_btn_td {width: 35px;height: 28px;margin-top: 11px;margin-left: 5px;background: #3f4954 url({IMGDIR}/guiigo-ss.png) no-repeat center;border-radius: 5px;}
+.scbar_btn_td .pn {height: 28px;}
+.scbar_hot_td {width: 765px;}
+#scbar_hot {height: 50px;line-height: 50px;padding-left: 20px;}
+#scbar_hot a {color: #666;}
+#scbar_hot a:hover {color: #ff8800;}
+
+
+/* 页码 */
+.pgs {}.pgs #newspecial, .pgs #newspecialtmp, .pgs #post_reply, .pgs #post_replytmp { float: left; margin-right: 5px; }
+.pg { float: right; }
+.pg, .pgb { line-height: 30px; }
+.pg a, .pg strong, .pgb a, .pg label { float: left; display: inline; margin-left: 4px; padding: 0 12px; height: 30px; border: 0; border-color: #e0e0e0; background-color: {WRAPBG}; background-repeat: no-repeat; color: {LINK}; overflow: hidden; text-decoration: none;border-radius: 3px;}
+.pg a.nxt, .pgb a { padding: 0 10px; }
+.pg a:hover, .pgb a:hover { border-color:#3f4954; color:#FFF; background:#3f4954;}
+.pg a.nxt { padding-right: 25px; background-image: url({IMGDIR}/arw_r.gif); background-position: 90% 50%;}
+.pg a.prev { background-image: url({IMGDIR}/arw_l.gif); background-position: 50% 50%; }
+.pg a.prev:hover{ background:#3f4954 url({IMGDIR}/arw_l1.png) no-repeat; background-position: 50% 50%; }
+.pg a.nxt:hover { padding-right: 25px; background:#3f4954 url({IMGDIR}/arw_r1.png) no-repeat; background-position: 90% 50%; }
+.pg strong { background:#3f4954; border-color:#3f4954; font-weight:normal; color:#FFF;}
+.pgb a { padding-left: 25px; background-image: url({IMGDIR}/arw_l.gif); background-position: 10px 50%; }
+.pgb a:hover { padding-left: 25px; background:#3f4954 url({IMGDIR}/arw_l1.png) no-repeat; background-position: 10px 50%; }
+.pg label { cursor: text;}
+.ie6 .pg label { padding-top: 3px; height: 23px; }
+.pg label .px { padding: 0; width: 25px; height: 16px; line-height: 16px; }
+#pgt .pg, #pgt .pgb { margin-top: 5px; }
+
+/* 按钮 */
+.pn { vertical-align: middle; overflow: hidden; margin-right: 3px; padding: 0; height: 25px; border: 1px solid #999; background: #E5E5E5 url({IMGDIR}/pn.png) repeat-x 0 0; cursor: pointer; -moz-box-shadow: 0 1px 0 #E5E5E5; -webkit-box-shadow: 0 1px 0 #E5E5E5; box-shadow: 0 1px 0 #E5E5E5; }
+.pn em, .pn span, .pn strong {padding: 0 20px;}
+.pnc, a.pnc {border-color: #c78e51;background-color: #f7a926;background-position: 0 -48px;color: #FFF !important;}
+.pn em, .pn strong {font-weight: 400;font-size:14px;}
+.filebtn { position: relative; margin: 0 auto; width: 80px; overflow: hidden; }
+.tb .o { margin: 1px 4px 0 2px; border: 1px solid #c78e51; }
+.tb .o, .tb .o a { height: 25px; background: #f7a926 url({IMGDIR}/pn.png) repeat-x 0 -48px; }
+
+/* TAB样式 */
+.tb { margin-top: 10px; margin-bottom:10px; padding-left: 5px; line-height: 30px; border-bottom: 1px solid #dedede; }
+.tb li { float: left; margin: 0 10px -1px 0; }
+.tb a { display: block; padding: 0 10px; border: 1px solid #dedede; background: #eaeaea; border-radius: 5px 5px 0 0;}
+.tb .a a, .tb .current a { border-bottom-color: #ffffff; background: #ffffff; font-weight: 400;}
+.tb_h {background-color: #ffffff;}
+
+/* 全局提示 */
+.flb {margin-bottom: 10px;}
+.flb em {float: left;font-size: 14px;font-weight: 400;color: #333333;}
+.flb span a {margin-left: 8px;background: url({IMGDIR}/guiigo-tcgb.png) no-repeat 0 0;transition:All 0.4s ease-in-out;-webkit-transition:All 0.4s ease-in-out;-moz-transition:All 0.4s ease-in-out;-o-transition:All 0.4s ease-in-out;}
+.flb span a:hover {background: url({IMGDIR}/guiigo-gbtg.png) no-repeat 0 0; transform:rotate(360deg);-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);}
+.plugin .bm_h {border-color: #f1f1f1;background: #fff;}
+.bm_h .i {padding-left: 0;}

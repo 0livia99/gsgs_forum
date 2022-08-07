@@ -1,0 +1,10 @@
+<?php echo 'QQ:2039074300';exit;?>
+<!-- header start -->
+<header class="header">
+    <div class="navzao">
+       <a href="home.php?mod=space&uid={$_G[uid]}&do=profile&mycenter=1" class="z zaofont iconleft"></a>
+	   <span class="name"><!--{subtemplate home/spacecp_header_name}--></span>
+	   <div class="y"><a href="forum.php"><span class="zaofont iconshouye fszett"></span></a></div>
+   </div>
+</header>
+<!-- header end -->

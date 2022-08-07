@@ -1,0 +1,37 @@
+<?php echo 'QQ:2039074300';exit;?>
+<!--{if $sublist > 0}-->
+<div class="clearze"></div>
+<div class="cl mtw mbw">
+	<div class="sub_forum_only bm_c cl">
+		<ul>
+			<!--{loop $sublist $sub}-->
+			<li class="cl">
+				<div class="b_p cl">
+					<div class="forum_info z">
+						<a href="forum.php?mod=forumdisplay&fid={$sub['fid']}">
+							<p class="name">{$sub[name]}</p>
+							<!--{if $sub[description]}--><p class="description fszet grey">$sub[description]</p><!--{/if}-->
+							<em class="fszet grey mtm"><i class="fszet zaofont iconmark"></i><!--{echo dnumber($sub[threads])}-->&nbsp;&nbsp;<i class="fszet zaofont iconcomment"></i><!--{echo dnumber($sub[posts])}--></em>
+						</a>
+					</div>
+					<div class="forum_icon y">
+					<!--{if $sub[icon]}-->
+						{$sub[icon]}
+					<!--{else}-->
+						<a href="forum.php?mod=forumdisplay&fid={$sub['fid']}">
+							<img src="{$_G['style']['styleimgdir']}/zaoer/forum-icon.jpg" align="left" />
+						</a>
+					<!--{/if}-->
+					<!--{if $sub[todayposts] > 0}--><em class="fszet todayposts zao-color">$sub[todayposts]</em><!--{/if}-->
+					</div>
+				</div>
+			</li>
+			<!--{/loop}-->
+		</ul>
+	</div>
+</div>
+<div class="clearze"></div>
+<!--{else}-->
+<div class="mtm threadzerlist"><ul><li class="b_p mtw mbw hm grey">{lang none}{lang forum_subforums}</li></ul></div>
+<!--{/if}-->
+

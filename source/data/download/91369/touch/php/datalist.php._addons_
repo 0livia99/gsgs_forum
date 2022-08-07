@@ -1,0 +1,17 @@
+<?php
+
+if(!defined('IN_DISCUZ')) {
+	exit('Access Denied');
+}
+
+function datalist_img_num($tid, $uid, $threadtable) {
+	$img_number = DB::result(DB::query("SELECT count(*) FROM ".DB::table('forum_attachment_'.$threadtable.'')." WHERE tid = '$tid' AND uid = '$uid' AND isimage = '1'"));
+	return $img_number;
+}
+
+function datalist_img($tid, $uid, $num, $threadtable) {
+	$list_img = DB::fetch_all("SELECT * FROM ".DB::table('forum_attachment_'.$threadtable.'')." WHERE tid = '$tid' AND uid = '$uid' AND isimage = '1' ORDER BY dateline ASC LIMIT $num");
+	return $list_img;
+}
+
+?>
