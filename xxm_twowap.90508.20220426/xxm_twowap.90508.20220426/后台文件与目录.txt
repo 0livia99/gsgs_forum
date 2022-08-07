@@ -1,0 +1,1 @@
+./template/xxm_twowap/touch/forum/viewthread.php
